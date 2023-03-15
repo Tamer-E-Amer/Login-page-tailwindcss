@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-field {
+    @apply text-center text-freshy-grey-800 p-2 text-sm w-full border-[1px] border-freshy-grey-400 focus:outline-none
+}
+.btn{
+    @apply duration-300 py-2 text-white flex items-center justify-center
+}
+
+.social{
+    @apply text-xl lg:text-2xl text-freshy-grey-200 hover:text-freshy-green hover:scale-125 duration-300 cursor-pointer
+}
+
+.footer-link{
+    @apply cursor-pointer hover:text-freshy-green 
+    cursor-pointer hover:text-freshy-green
+    cursor-pointer hover:text-freshy-green
+    cursor-pointer hover:text-freshy-green
+    cursor-pointer hover:text-freshy-green
+}
+
+input:checked + div {
+    @apply border-freshy-green ;
+  }
+  input:checked + div i {
+    @apply opacity-80 text-freshy-green;
+  }

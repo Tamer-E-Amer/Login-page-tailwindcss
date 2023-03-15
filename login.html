@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/output.css" />
+    <title>Login</title>
+  </head>
+
+  <body class="font-poppins">
+    <!-- Header -->
+    <header class="bg-freshy-grey-800 px-4 w-full h-[100px] flex items-center">
+      <div class="container flex items-center justify-between">
+        <!-- Logo -->
+        <div class="md:w-1/3 lg:w-1/4">
+          <img src="./public/img/logo.png" alt="Logo" />
+        </div>
+        <!--  Search -->
+        <div class="hidden w-1/2 md:w-1/3 md:block">
+          <form
+            action=""
+            class="flex items-center justify-center md:justify-start w-full"
+          >
+            <input
+              type="text"
+              name=""
+              id=""
+              class="focus:outline-none p-2 w-full h-8 text-center text-freshy-grey-400"
+              placeholder="Search Freshy.."
+            />
+            <button
+              class="flex items-center justify-center bg-freshy-green h-8 w-8 text-white hover:bg-slate-300 hover:text-freshy-grey-800 duration-300"
+            >
+              <svg
+                class="w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!-- Action buttons -->
+        <div
+          class="hidden w-1/4 pl-8 md:w-1/3 md:flex items-center justify-end"
+        >
+          <!-- cart -->
+          <div class="flex items-center justify-center">
+            <i
+              class="fa-solid fa-cart-shopping text-freshy-grey-200 text-xl hover:text-2xl duration-300 cursor-pointer"
+            ></i>
+          </div>
+          <button
+            class="py-3 px-6 capitalize text-freshy-grey-200 hover:tracking-wider duration-300"
+          >
+            login
+          </button>
+          <button
+            class="py-3 md:py-2 text-white md:px-2 md:border-[1px] md:border-freshy-green lg:px-6 lg:bg-freshy-green capitalize hover:bg-slate-300 hover:text-freshy-grey-800 hover:tracking-wider transition-all duration-300"
+          >
+            sign in
+          </button>
+        </div>
+        <!-- Menu icons -->
+        <div
+          class="sm:flex items-center justify-center text-2xl text-freshy-grey-200 md:hidden"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- login container -->
+    <section
+      class="container flex items-center justify-center w-full lg:min-h-[calc(100vh-100px)] md:pt-8 mb-4"
+    >
+      <div
+        class="border-[1px] border-freshy-grey-200 w-full mx-4 md:w-3/4 rounded-3xl relative overflow-hidden flex items-center justify-center mt-4"
+      >
+        <!-- Login title -->
+        <div
+          class="w-full h-[40px] md:h-[60px] bg-freshy-green flex items-center justify-center absolute top-0 left-0 text-white font-medium text-sm md:text-lg"
+        >
+          Freshy login
+        </div>
+        <!-- login form -->
+        <div
+          class="mt-12 lg:mt-16 p-8 flex flex-col md:flex-row items-center justify-between w-full gap-16 lg:gap-0"
+        >
+          <!-- Form illustation -->
+          <div class="w-[243px] h-[164px] md:w-[320px] md:h-[277px]">
+            <img
+              src="./public/img/form-illustation.png"
+              alt="form illustration"
+            />
+          </div>
+          <!-- form -->
+          <div class="w-full h-3/4 md:w-1/2">
+            <h1 class="text-base text-freshy-grey-800 mb-4">
+              Sign in Freshy market
+            </h1>
+            <form action="" class="flex flex-col gap-4 w-full">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your email"
+                class="input-field"
+              />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                class="input-field"
+              />
+
+              <div class="flex items-center justify-start">
+                <input
+                  type="checkbox"
+                  name="rememberMe"
+                  id="rememberMe"
+                  class="mr-2 h-4 w-4 rounded-sm border-[1px] text-freshy-grey-400 border-freshy-grey-400 opacity-0 absolute"
+                />
+
+                <div
+                  class="bg-white mr-2 h-4 w-4 rounded-sm border-[1px] border-freshy-grey-400 flex items-center justify-center"
+                >
+                  <i
+                    class="fa-solid fa-sharp fa-square text-sm transition duration-500 pointer-events-none opacity-0"
+                  ></i>
+                </div>
+                <label for="rememberMe" class="cursor-pointer text-sm"
+                  >Remember me</label
+                >
+              </div>
+
+              <button class="btn bg-freshy-grey-800 hover:bg-freshy-green">
+                <i
+                  class="fa-sharp fa-solid fa-right-to-bracket text-sm mr-2"
+                ></i>
+
+                login
+              </button>
+              <div class="text-sm">
+                <span
+                  >Dont have an account?
+                  <a href="#" class="text-freshy-green">Click here</a>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="w-full bg-freshy-grey-800 h-auto lg:h-[423px] relative">
+      <div
+        class="container flex flex-col items-center justify-center lg:items-start lg:flex-row py-8 w-2/3 lg:w-full gap-8 lg:gap-12 pb-16"
+      >
+        <!-- contact us -->
+        <div class="flex flex-col items-start justify-start w-full lg:w-1/3">
+          <h1 class="text-freshy-grey-200 text-lg">Contact us</h1>
+          <!-- line after title -->
+          <div class="flex items-center justify-start w-full my-2">
+            <div class="w-3/4 h-[1px] bg-freshy-green"></div>
+            <div class="w-1/4 h-[1px] bg-freshy-grey-400"></div>
+          </div>
+          <!-- City address -->
+          <h2 class="text-sm text-freshy-grey-200 mb-2">15 Stein street</h2>
+          <h2 class="text-sm text-freshy-grey-200 mb-2">4473 Dusseldorf</h2>
+          <h2 class="text-sm text-freshy-grey-200 mb-2">Germany</h2>
+          <!-- Tel and email -->
+          <div class="flex items-center gap-2 text-freshy-grey-200 mt-8">
+            <i class="fa-solid fa-phone"></i>
+            <h2 class="text-sm">049-011111111111</h2>
+          </div>
+          <div class="flex items-center gap-2 text-freshy-grey-200 mt-4">
+            <i class="fa-solid fa-envelope"></i>
+            <h2 class="text-sm">info@freshy.com</h2>
+          </div>
+          <!-- Social icons -->
+          <div class="flex items-start justify-center gap-4 mt-8">
+            <i class="fa-brands fa-facebook social"></i>
+            <i class="fa-brands fa-instagram social"></i>
+            <i class="fa-brands fa-twitter social"></i>
+            <i class="fa-brands fa-youtube social"></i>
+          </div>
+        </div>
+        <!-- Useful links-->
+        <div class="flex flex-col items-start justify-start w-full lg:w-1/3">
+          <h1 class="text-freshy-grey-200 text-lg">Useful links</h1>
+          <!-- line after title -->
+          <div class="flex items-center justify-start w-full my-2">
+            <div class="w-3/4 h-[1px] bg-freshy-green"></div>
+            <div class="w-1/4 h-[1px] bg-freshy-grey-400"></div>
+          </div>
+          <!-- Links menu -->
+          <ul class="text-freshy-grey-200 text-sm space-y-2">
+            <li class="footer-link">
+              <i class="fa-solid fa-angle-right mr-2"></i>FAQ
+            </li>
+            <li class="footer-link">
+              <i class="fa-solid fa-angle-right mr-2"></i>About us
+            </li>
+            <li class="footer-link">
+              <i class="fa-solid fa-angle-right mr-2"></i>Provacy and policy
+            </li>
+            <li class="footer-link">
+              <i class="fa-solid fa-angle-right mr-2"></i>Terms and services
+            </li>
+            <li class="footer-link">
+              <i class="fa-solid fa-angle-right mr-2"></i>Return policy
+            </li>
+          </ul>
+        </div>
+        <!-- Subscribe-->
+        <div class="flex flex-col items-start justify-start w-full lg:w-1/3">
+          <h1 class="text-freshy-grey-200 text-lg">Subscribe</h1>
+          <!-- line after title -->
+          <div class="flex items-start justify-start w-full my-2">
+            <div class="w-3/4 h-[1px] bg-freshy-green"></div>
+            <div class="w-1/4 h-[1px] bg-freshy-grey-400"></div>
+          </div>
+          <!-- Subscribe form -->
+          <div>
+            <form action="" class="flex flex-col gap-4 w-full lg:w-3/4 py-4">
+              <input
+                type="text"
+                name="subscribe-email"
+                id="subscribe-email"
+                placeholder="Enter your email"
+                class="input-field"
+              />
+              <button
+                class="btn bg-freshy-green hover:bg-freshy-grey-400 hover:text-freshy-grey-800"
+              >
+                <i class="fa-solid fa-envelope text-lg mr-2"></i>
+                Subscribe
+              </button>
+            </form>
+            <p
+              class="text-xs text-freshy-grey-200 w-full lg:w-3/4 leading-normal"
+            >
+              Subscribe to our Newsletter to receive early discount offers,
+              latest news, sales and promo information.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center w-full h-12 border-t-[1px] text-freshy-grey-200 text-sm border-freshy-grey-200 absolute bottom-0 left-0"
+      >
+        &copy; Copy rights reserved 2023
+      </div>
+    </section>
+  </body>
+</html>
